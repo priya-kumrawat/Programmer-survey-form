@@ -1,0 +1,91 @@
+<!DOCTYPE html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programmers Survey Form</title>
+  <link rel="stylesheet" href="build-a-survey-form.css" />
+</head>
+
+<body>
+  <div id="heading">
+    <h1 id=title>Programmers Voice! Tell us your choice!</h1>
+    <p id="description">We love to know about which technology and tools software engineers are using world wide! Each
+      and every Developers opinions are very precious to us!</p>
+  </div>
+  <div id="main">
+    <form id="survey-form">
+      <div id="input-field">
+        <label id="name-label">Name : </label>
+        <input type="text" id="name" placeholder="Username" name="Username" required /><br>
+        <label id="email-label">Email : </label>
+        <input type="email" id="email" pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$" placeholder="abc@gmail.com"
+          name="email" required /><br>
+        <label id="number-label">Age : </label><input type="number" id="number" name="number" min="10" max="99"
+          placeholder="18" />
+      </div>
+
+      <div id="dropdown-div"><br>
+        <label id="dropdown-label"><strong>Programming language you are expert at: </strong></label><br>
+        <select id="dropdown" name="code-lang" class="form">
+          <option value="C">C (Programming Language)</option>
+          <option value="Python">Python</option>
+          <option value="C#">C#</option>
+          <option value="php">PHP</option>
+          <option value="Js">Java Script</option>
+          <option value="Go">Go (Programming Language)</option>
+          <option value="ruby">Ruby on rails</option>
+          <option value="C++">C++</option>
+          <option value="Java">Java</option>
+        </select>
+      </div>
+      <div id="button-area">
+        <br>
+        <label id="job-label"><b>Employment Status:</b></label><br>
+        <input type="radio" class="radio-inline" name="gender" value="employed" checked> Full-time job
+        holder.(Employed)<br>
+        <input type="radio" class="radio-inline" name="gender" value="freelancer"> Part-time job holder.(Freelancer)<br>
+        <input type="radio" class="radio-inline" name="gender" value="applier"> Looking for a job.(Applier)<br>
+        <input type="radio" class="radio-inline" name="gender" value="unemployed"> I am a student.(Unemployed)
+      </div>
+      <div id="button-area"><br>
+        <label id="os-label"><b>Operating system experience: </b></label><br>
+        <input type="checkbox" name="os1" value="windows" checked> I am experienced with Windows-OS<br>
+        <input type="checkbox" name="os2" value="linux"> I am experienced with Linux-OS<br>
+        <input type="checkbox" name="0s3" value="mac"> I am experienced with Mac-OS<br>
+      </div>
+
+      <div id="dropdown"><br><br>
+        <label id="dropdown-label"><strong>Programming language you wanna be expert: </strong></label><br>
+        <select id="dropdown" name="code-lang" class="form"><br><br>
+          <option value="C">C (Programming Language)</option>
+          <option value="Python">Python</option>
+          <option value="C#">C#</option>
+          <option value="php">PHP</option>
+          <option value="Js">Java Script</option>
+          <option value="Go">Go (Programming Language)</option>
+          <option value="ruby">Ruby on rails</option>
+          <option value="C++">C++</option>
+          <option value="Java">Java</option>
+        </select>
+      </div>
+      <div id="button-area"><br><br>
+        <label id="os-label"><b>Latest technology experience:</b></label><br>
+        <input type="checkbox" name="tech1" value="flutter"> Flutter UI<br>
+        <input type="checkbox" name="tech2" value="nodejs"> Node.js<br>
+        <input type="checkbox" name="tech3" value="tnflow"> Tensorflow<br>
+        <input type="checkbox" name="tech3" value="git"> Github<br>
+        <input type="checkbox" name="tech3" value="devops"> Dev-Ops<br>
+      </div>
+
+
+      <div id="ending"><br><br>
+        <label id="comments-label">Do you have any suggestion about this survey?</label><br>
+        <textarea style=height:120px;" class="form"
+          placeholder="Please feel free to write a review..."></textarea><br><br>
+        <input id="submit" type="submit" class="form">
+      </div>
+      </from>
+  </div>
+</body>
+<html>
